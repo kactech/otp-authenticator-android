@@ -54,6 +54,8 @@ public class NetworkTimeProvider {
    * @throws IOException if an I/O error occurs.
    */
   public long getNetworkTime() throws IOException {
+	if(true)//CIYAM
+		return System.currentTimeMillis();
     HttpHead request = new HttpHead(URL);
     Log.i(LOG_TAG, "Sending request to " + request.getURI());
     HttpResponse httpResponse;

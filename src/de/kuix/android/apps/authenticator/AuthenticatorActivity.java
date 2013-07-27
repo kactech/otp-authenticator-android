@@ -634,8 +634,10 @@ public class AuthenticatorActivity extends TestableActivity {
       //       status messages (presuming we have a way to remove them after they
       //       are stale).
       Toast.makeText(context, R.string.secret_saved, Toast.LENGTH_LONG).show();
+      /* CIYAM
       ((Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE))
         .vibrate(VIBRATE_DURATION);
+      */
       return true;
     } else {
       Log.e(LOCAL_TAG, "Trying to save an empty secret key");
